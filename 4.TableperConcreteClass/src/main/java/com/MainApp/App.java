@@ -38,32 +38,32 @@ public class App
     	Session s = sf.openSession();
     	Transaction t = s.beginTransaction();
     	
-//    	Developer d = new Developer();
-//    	d.setId(101);
-//    	d.setName("ram");
-//    	d.setSalary(4500);
-//    	d.setTech("Back-end");
-//    	d.setProject("E-Commerce");	
-//    	s.save(d);
-//    	t.commit();
+   	Developer d = new Developer();
+   	d.setId(101);
+   	d.setName("ram");
+   	d.setSalary(4500);
+   	d.setTech("Back-end");
+   	d.setProject("E-Commerce");	
+   	s.save(d);
+   	t.commit();
     	
     	
-//    	SalesPerson sp = new SalesPerson();
-//    	sp.setId(102);
-//    	sp.setName("Shaym");
-//    	sp.setSalary(4300);
-//    	sp.setClient("xyz");
-//    	sp.setTarget("1 Lakh");
-//    	s.save(sp);
-//    	t.commit();
+   	SalesPerson sp = new SalesPerson();
+   	sp.setId(102);
+   	sp.setName("Shaym");
+   	sp.setSalary(4300);
+   	sp.setClient("xyz");
+   	sp.setTarget("1 Lakh");
+   	s.save(sp);
+   	t.commit();
     	
     	//Read 
-//    	Developer d = s.get(Developer.class, 101);
-//    	System.out.println(d.getId());
-//    	System.out.println(d.getName());
-//    	System.out.println(d.getSalary());
-//    	System.out.println(d.getTech());
-//    	System.out.println(d.getProject());
+   	Developer d = s.get(Developer.class, 101);
+   	System.out.println(d.getId());
+   	System.out.println(d.getName());
+   	System.out.println(d.getSalary());
+   	System.out.println(d.getTech());
+   	System.out.println(d.getProject());
     	
     	//update
 //    	Developer d = s.get(Developer.class,101);
